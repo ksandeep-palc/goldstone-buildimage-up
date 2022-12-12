@@ -1,6 +1,6 @@
 prerequisites:
     packages:
-      - onl-kernel-5.4-lts-x86-64-all:amd64
+      - onl-kernel-5.10-lts-x86-64-all:amd64
       - x1-loader-initrd:amd64
 
 packages:

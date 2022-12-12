@@ -8,14 +8,14 @@
 - ipmitool
 - iptables
 - x1-upgrade
-- onl-kernel-5.4-lts-x86-64-all-modules
-- x1-saibcm-kernel-5.4-lts-x86-64-all:amd64
+- onl-kernel-5.10-lts-x86-64-all-modules
+- x1-saibcm-kernel-5.10-lts-x86-64-all:amd64
 - gs-usonic:amd64
 - gs-tai:amd64
 - k3s:amd64
 - stern:amd64
 - gs-mgmt:amd64
-- cfp2piu-kernel-5.4-lts-x86-64-all:amd64
+- cfp2piu-kernel-5.10-lts-x86-64-all:amd64
 - gscli:amd64
 - onlp-py3:amd64
 - gssystem:amd64

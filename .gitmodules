@@ -3,7 +3,7 @@
 	url = https://github.com/oopt-goldstone/OpenNetworkLinux.git
 [submodule "sm/sonic-buildimage"]
 	path = sm/sonic-buildimage
-	url = https://github.com/microsonic/sonic-buildimage.git
+	url = https://github.com/palcnetworks/gs-sonic-buildimage.git
 [submodule "sm/linux-gft"]
 	path = sm/linux-gft
 	url = https://github.com/oopt-goldstone/linux-gft.git

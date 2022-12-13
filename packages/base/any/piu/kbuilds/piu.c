@@ -5,6 +5,7 @@
 #include <linux/cdev.h>
 #include <linux/device.h>
 #include <linux/uaccess.h>
+#include <linux/fs.h>
 
 #include "piu.h"
 #include "aco.h"

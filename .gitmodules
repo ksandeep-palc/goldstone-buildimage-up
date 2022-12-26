@@ -5,7 +5,7 @@
 [submodule "sm/sonic-buildimage"]
 	path = sm/sonic-buildimage
 	url = https://github.com/ksandeep-palc/sonic-buildimage-oopt.git
-    branch = kernel_upgrade
+    branch = 202205
 [submodule "sm/linux-gft"]
 	path = sm/linux-gft
 	url = https://github.com/oopt-goldstone/linux-gft.git

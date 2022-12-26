@@ -2,7 +2,3 @@
 	path = sm/ONL
 	url = https://github.com/ksandeep-palc/OpenNetworkLinux-oopt.git
     branch = kernel_upgrade
-[submodule "sm/sonic-buildimage"]
-	path = sm/sonic-buildimage
-	url = https://github.com/ksandeep-palc/sonic-buildimage-oopt.git
-    branch = 202205

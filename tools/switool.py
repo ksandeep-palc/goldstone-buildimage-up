@@ -5,7 +5,7 @@ import sys
 import os
 import zipfile
 import json
-import apt_inst
+#import apt_inst
 import onlu
 import subprocess
 

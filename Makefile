@@ -1,5 +1,5 @@
 ifndef GOLDSTONE_BUILDER_IMAGE
-    GOLDSTONE_BUILDER_IMAGE = gs-builder
+    GOLDSTONE_BUILDER_IMAGE = gs-builder-bulls
 endif
 
 ifdef X1
@@ -73,8 +73,8 @@ docker-debug: docker-check
 	$(ONL)/docker/tools/onlbuilder $(BUILDER_OPTS) $(VOLUMES_OPTS) -c tools/debug.sh
 
 builder:
-	docker pull --platform=linux/amd64 python:3.10-buster
-	docker tag python:3.10-buster python:3-buster-amd64
+	docker pull --platform=linux/amd64 python:3.10-bullseye
+	docker tag python:3.10-bullseye python:3-bullseye-amd64
 	cd docker/images/builder && docker build -t $(GOLDSTONE_BUILDER_IMAGE) .
 
 docker: docker-check

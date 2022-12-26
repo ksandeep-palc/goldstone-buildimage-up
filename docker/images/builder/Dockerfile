@@ -4,17 +4,17 @@ RUN curl -sS https://api.github.com/repos/docker/buildx/releases/latest | \
     jq -r '.assets[].browser_download_url' | grep linux-amd64 | xargs curl -sSL > /docker-buildx
 RUN chmod a+x /docker-buildx
 
-FROM  opennetworklinux/builder10:1.2
+FROM  opennetworklinux/builder11:1.2
 
-RUN apt update --allow-releaseinfo-change && DEBIAN_FRONTEND=noninteractive apt install -qy apt-transport-https ed libelf-dev python-pip ca-certificates apt-cacher-ng curl
+RUN apt update --allow-releaseinfo-change && DEBIAN_FRONTEND=noninteractive apt install -qy apt-transport-https ed libelf-dev python3-pip ca-certificates apt-cacher-ng curl
 # Install Docker cli
 COPY --from=docker:20.10 /usr/local/bin/docker /usr/local/bin/
 COPY --from=buildx /docker-buildx /usr/local/lib/docker/cli-plugins/
 
-COPY --from=python:3-buster-amd64 /usr/local/bin/python3 /usr/local/bin/python3
-COPY --from=python:3-buster-amd64 /usr/local/lib/python3.10 /usr/local/lib/python3.10
-COPY --from=python:3-buster-amd64 /usr/local/lib/libpython3.10.so.1.0 /usr/local/lib/libpython3.10.so.1.0
-COPY --from=python:3-buster-amd64 /usr/local/include/python3.10 /usr/local/include/python3.10
+COPY --from=python:3-bullseye-amd64 /usr/local/bin/python3 /usr/local/bin/python3
+COPY --from=python:3-bullseye-amd64 /usr/local/lib/python3.10 /usr/local/lib/python3.10
+COPY --from=python:3-bullseye-amd64 /usr/local/lib/libpython3.10.so.1.0 /usr/local/lib/libpython3.10.so.1.0
+COPY --from=python:3-bullseye-amd64 /usr/local/include/python3.10 /usr/local/include/python3.10
 
 RUN ldconfig
 

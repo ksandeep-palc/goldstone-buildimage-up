@@ -29,7 +29,7 @@ ccflags-y += -DBCM_ESW_SUPPORT
 ccflags-$(IPROC_CMICD) += -DIPROC_CMICD
 
 # Important -- the KCOM_FILTER_MAX must match the clags in sonic-buildimage/platform/broadcom/saibcm-modules/make/Make.config
-ccflags-y += -DKCOM_FILTER_MAX=256
+ccflags-y += -DSAI_FIXUP -DKCOM_FILTER_MAX=1025 -DKCOM_NETIF_MAX=1056
 ccflags-y += $(ccflags-extra)
 
 -include $(THIS_DIR)/../Kbuild.$(ARCH)

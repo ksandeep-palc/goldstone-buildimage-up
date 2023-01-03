@@ -1,7 +1,7 @@
 packages:
   - name: libsaibcm
     arch: amd64
-    external: "$SONIC/target/debs/${ONL_DEBIAN_SUITE}/libsaibcm_7.1.10.4_amd64.deb"
+    external: "$SONIC/target/debs/${ONL_DEBIAN_SUITE}/libsaibcm_7.1.25.4_amd64.deb"
   - name: libsaibcm-dev
     arch: amd64
-    external: "$SONIC/target/debs/${ONL_DEBIAN_SUITE}/libsaibcm-dev_7.1.10.4_amd64.deb"
+    external: "$SONIC/target/debs/${ONL_DEBIAN_SUITE}/libsaibcm-dev_7.1.25.4_amd64.deb"

@@ -33,7 +33,7 @@ K_CONFIG := arm64-all.config
 K_BUILD_TARGET := Image.gz
 K_COPY_SRC := arch/arm64/boot/Image.gz
 ifndef K_COPY_DST
-K_COPY_DST := kernel-5.4-lts-arm64-all.bin.gz
+K_COPY_DST := kernel-5.10-lts-arm64-all.bin.gz
 endif
 
 K_SKIP_DOWNLOAD := 1

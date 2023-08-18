@@ -68,6 +68,11 @@ main(int argc, char* argv)
     TRY(sai_api_query(SAI_API_VLAN,             (void **)&vlan_api));
 
     sai_log_set(SAI_API_HOSTIF, SAI_LOG_LEVEL_DEBUG);
+    sai_log_set(SAI_API_SWITCH, SAI_LOG_LEVEL_DEBUG);
+    sai_log_set(SAI_API_PORT, SAI_LOG_LEVEL_DEBUG);
+    sai_log_set(SAI_API_VLAN, SAI_LOG_LEVEL_DEBUG);
+    sai_log_set(SAI_API_VIRTUAL_ROUTER, SAI_LOG_LEVEL_DEBUG);
+    sai_log_set(SAI_API_ROUTER_INTERFACE, SAI_LOG_LEVEL_DEBUG);
 
     sai_mac_t mac = {0xa8, 0x2b, 0xb5, 0x15, 0x26, 0x08};
 

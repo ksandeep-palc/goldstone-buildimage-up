@@ -10,7 +10,7 @@ usonic-amd64.tar: Makefile bcmd
 	do \
 	    docker pull $$image; \
 	done
-	docker save ghcr.io/microsonic/usonic-debug:202205 $(USONIC_IMAGES) $(BCMD_IMAGE) > $@
+	docker save $(USONIC_IMAGES) $(BCMD_IMAGE) > $@
 
 bcmd:
 	cd bcmd && DOCKER_BUILDKIT=1 docker build --progress plain -t $(BCMD_IMAGE) .
